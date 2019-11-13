@@ -1,0 +1,148 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+/*header*/
+
+.header-hlavni{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 3em;
+}
+
+.header-nazev{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #25133d;
+    font-weight: bold;
+    align-items: center;
+    padding: 2em;
+}
+.header-navigace ul{
+    display: flex;
+    list-style: none;
+}
+.header-navigace a{
+    text-decoration: none;
+    color: #48418e;
+    padding: 1em 2em;
+}
+.header-navigace a:hover{
+    background-color:   #25133d;
+    color: lavenderblush;
+    transition: background-color 1s;
+}
+
+/*prvni_sekce*/
+
+.prvni-sekce{
+    padding: 2.5em;
+    background-image: url(telefon.png), url(pozadi.jpg);
+    background-position: bottom right, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 38%, 100%;
+}
+h1{
+    color: whitesmoke;
+    font-size: 5em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1em;
+}
+h2{
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 1.5em 0;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.prvni-sekce a{
+    display: inline-block;
+    width: 12em;
+    height: 3em;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3em;
+    color: whitesmoke;
+    box-shadow: #25133d 0px 2px 10px 0px;
+}
+
+.prvni-sekce a:hover{
+    background-color: transparent;
+    color: #25133d;
+    border: 1px solid #25133d;
+    box-shadow: none;
+}
+
+.odkaz-stahnout{
+    background-color: #48418e;
+    margin: 0 2em 0 0;
+}
+
+/*.odkaz-stahnout a.odkaz-stahnout:hover{
+    background-color: transparent;
+}*/
+
+/*druha_sekce*/
+
+.druha-sekce{
+    padding: 0px 2em;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+}
+.box{
+    padding: 2em;
+}
+h3{
+    color:  #48418e;
+}
+.druha-sekce p{
+    color: grey
+}
+
+/*paticka*/
+
+.paticka{
+    height: 3em;
+    background-color: #48418e;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 300;
+    line-height: 3em;
+}

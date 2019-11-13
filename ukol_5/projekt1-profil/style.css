@@ -53,10 +53,6 @@ p {
     color: #9c9c9c;
     font-size: 14px;
 }
-ul{
-    margin: 0;
-    padding: 0;
-}
 a{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -68,7 +64,6 @@ a{
     text-align: center;
 }
 .portfolio {
-    display: inline-block;
     width: 250px;
     border: solid;
     border-width: 1px 0px 1px 0px;
@@ -82,7 +77,6 @@ a{
     color: #ffffff;
 }
 .facebook{
-    display: inline-block;
     width: 125px; 
     border: solid;
     border-width: 0px 1px 0px 0px;
@@ -96,7 +90,6 @@ a{
     color: #ffffff;
 }
 .twitter{
-    display: inline-block;
     width: 125px;
     border: solid;
     border-width: 0px 0px 0px 0px;
