@@ -1,0 +1,31 @@
+body {
+    background-color: #D9C5AD;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #595552;
+}
+
+h1 {
+    color: #BF215B;
+    font-size: 2em;
+}
+
+h2 {
+    color: #7C8C5A;
+    font-size: 1.5em;
+}
+
+div {
+    font-style: italic;
+}
+
+a {
+    color: #BF215B
+}
+
+p {
+    text-align: justify
+}
+
+ul{
+    list-style-type: circle
+}

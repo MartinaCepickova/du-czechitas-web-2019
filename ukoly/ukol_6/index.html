@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mobilní aplikace</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+        <div class="obal">
+            <header class="header-hlavni">
+                <a class="header-nazev" href="">Super appka</a>
+                <div class="responsive-menu">
+                    <img  src="menu.png" alt="" onclick="kuk()"> 
+                </div>
+                <nav class="header-navigace" id="mojenavigace">  
+                    <ul>
+                        <li>
+                            <a href="">Úžasný design</a>
+                        </li>
+                        <li>
+                            <a href="">Boží funkce</a>
+                        </li>
+                        <li>
+                            <a href="">Zdarma ke stažení</a>
+                        </li>
+                    </ul> 
+                </nav>
+            </header>
+            <main>
+
+                <div class="prvni-sekce">
+                    <h1>Super Appka</h1>
+                    <h2>Úžasná mobilní aplikace, <br/>která Ti změní život.</h2>
+                    <a class="odkaz-stahnout" href="#">Stáhnout zdarma</a>
+                    <a class="odkaz-informace" href="#">Více informací</a>
+                </div>
+
+                <div class="druha-sekce">
+
+                    <div class="box">
+                        <img class="letadlo" src="letadlo.svg" width="50" height="50" alt="">
+                        <h3>Cestuj po světě</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id animi suscipit vero corrupti temporibus facere nisi officiis perspiciatis quaerat.</p>
+                    </div>
+
+                    <div class="box">
+                            <img class="chat" src="bubliny.svg" width="50" height="50" alt="">
+                            <h3>Chatuj s přáteli</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id animi suscipit vero corrupti temporibus facere nisi officiis perspiciatis quaerat.</p>
+                    </div>
+
+                    <div class="box">
+                            <img class="mapa" src="mapa.svg" width="50" height="50" alt="">
+                            <h3>Zažij dobrodružství</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id animi suscipit vero corrupti temporibus facere nisi officiis perspiciatis quaerat.</p>
+                    </div>
+                </div>
+
+            <footer class="paticka">    
+                <p>© 2016, Web od A do Z</p>
+            </footer>
+               
+            </main>
+
+            <script>
+                function kuk (){
+                    let suplik = document.querySelector("#mojenavigace");
+                    if(suplik.className === "header-navigace"){
+                        suplik.className += " responsive";
+                    }
+                    else{
+                        suplik.className = "header-navigace";
+                    }
+                }
+            </script>
+        </div>
+        <!-- konec .obal -->
+    </body>
+</html>

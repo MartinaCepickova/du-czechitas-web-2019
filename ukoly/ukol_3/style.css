@@ -1,0 +1,35 @@
+body {
+    background-color: #D9C5AD;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #595552;
+}
+/*rozložení stránky*/
+.hlavicka{
+    background-color: #E8C073;
+    height: 100px;
+}
+.sekce{
+    background-color: #F1CAB9;
+}
+.paticka{
+    background-color: #E8C073;
+}
+/*styly písma*/
+h1 {
+    color: #595552;
+    font-size: 2em;
+}
+h2 {
+    color: #7C8C5A;
+    font-size: 1.5em;
+}
+a {
+    color: #BF215B
+}
+p {
+    text-align: justify
+}
+ul{
+    list-style-type: circle
+}
+

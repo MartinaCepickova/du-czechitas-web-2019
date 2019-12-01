@@ -1,0 +1,112 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+
+body {
+    background-color: #bdc3c7;
+}
+.profil {
+    background-color: #31363b;
+    width: 250px;
+    box-shadow: black 0px 0px 8px 0px;
+}
+.foto {
+    width: 100%;
+}
+.logo {
+    background-color: #b92e81;
+    border-radius: 50%;
+    position: absolute;
+    left: 185px;
+    top: 150px; 
+    box-shadow: black 0px 0px 6px 1px;
+}
+.obsah {
+    color: whitesmoke;
+    padding: 20px;
+}
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+p {
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #9c9c9c;
+    font-size: 14px;
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9c9c9c;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+.portfolio {
+    width: 250px;
+    border: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: #3f464d;
+}
+.portfolio a{
+    padding: 10px; 
+}
+.portfolio a:hover{
+    background-color: lightcoral;
+    color: #ffffff;
+}
+.facebook{
+    width: 125px; 
+    border: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #3f464d;
+}
+.facebook a{
+    padding: 10px;
+}
+.facebook a:hover{
+    background-color: #3b5998;
+    color: #ffffff;
+}
+.twitter{
+    width: 125px;
+    border: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #3f464d;
+}
+.twitter a{
+    padding: 10px;
+}
+.twitter a:hover{
+    background-color: #1da1f2;
+    color: #ffffff
+}
+a:hover{
+    transition: background-color 1s;
+}
+
+.odkazy{
+    display: flex;
+    flex-wrap: wrap;
+}
