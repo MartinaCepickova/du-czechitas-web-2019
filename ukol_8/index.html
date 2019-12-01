@@ -13,9 +13,9 @@
             <header class="header-hlavni">
                 <a class="header-nazev" href="">Super appka</a>
                 <div class="responsive-menu">
-                    <img  src="menu.png" alt="">
+                    <img  src="menu.png" alt="" onclick="kuk()"> 
                 </div>
-                <nav class="header-navigace">  
+                <nav class="header-navigace" id="mojenavigace">  
                     <ul>
                         <li>
                             <a href="">Úžasný design</a>
@@ -60,10 +60,23 @@
                 </div>
 
             <footer class="paticka">    
-                <p>@2016, Web od A do Z</p>
+                <p>© 2016, Web od A do Z</p>
             </footer>
                
             </main>
-        </div><!-- konec .obal -->
+
+            <script>
+                function kuk (){
+                    let suplik = document.querySelector("#mojenavigace");
+                    if(suplik.className === "header-navigace"){
+                        suplik.className += " responsive";
+                    }
+                    else{
+                        suplik.className = "header-navigace";
+                    }
+                }
+            </script>
+        </div>
+        <!-- konec .obal -->
     </body>
 </html>
